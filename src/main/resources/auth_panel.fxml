@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="authGrid" alignment="CENTER" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AuthController">
+    <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+    </padding>
+    <Text fx:id="title" text="Welcome to the Chat" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+        <font>
+            <Font name="Arial" size="26.0" />
+        </font>
+        <style>
+            -fx-fill: navy;
+        </style>
+    </Text>
+    <Label fx:id="labelUserName" text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <font>
+            <Font name="Arial" size="16.0" />
+        </font>
+        <style>
+            -fx-text-fill: dimgray;
+        </style>
+    </Label>
+    <TextField fx:id="userTextField" promptText="Enter your username" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <font>
+            <Font name="Arial" size="14.0" />
+        </font>
+    </TextField>
+    <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <children>
+            <Button fx:id="signInButton" mnemonicParsing="false" style="-fx-background-color: #1976D2; -fx-text-fill: white;" text="Sign In">
+                <font>
+                    <Font name="Arial" size="14.0" />
+                </font>
+            </Button>
+        </children>
+    </HBox>
+    <Text fx:id="actiontarget" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+</GridPane>
